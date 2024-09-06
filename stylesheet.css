@@ -1,49 +1,59 @@
-html{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
     background-color: #343A40;
     color: #DEE2E6;
 }
 
-body{
+body {
     background-color: #6C757D;
 }
 
-nav{
+nav {
     background-color: #495057;
 }
 
-footer{
+footer {
     background-color: #495057
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-nav ul{
+h5 {
+    margin-left: 1rem;
+    margin-bottom:1rem;
+}
+
+nav ul {
     padding: 3rem;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-a{
+a {
     text-decoration: none;
     color: #DEE2E6;
 }
 
-p.project-description{
-    margin:1rem;
+p.project-description {
+    text-wrap: balance;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    padding-top: 0rem;
 }
 
-p{
-    margin:2rem;
+p {
+    margin: 2rem;
 }
 
-ul.positions{
+ul.positions {}
 
-}
-
-footer ul{
+footer ul {
     padding: 3rem;
 
     list-style: none;
@@ -51,12 +61,21 @@ footer ul{
     justify-content: space-evenly;
 }
 
-h3{
+h3 {
     margin-left: 2rem;
 }
 
-div.list{
-    margin-left:2rem;
-    
+div.list {
+    margin-left: 2rem;
+    padding: 2rem;
+    padding-top: 0rem;
+    padding-bottom:1rem;
 }
 
+div.project-list {
+    margin-left: 1rem;
+}
+
+li.project-description {
+    margin-bottom:.5rem;
+}
