@@ -1,9 +1,62 @@
-nav ul {
+html{
+    background-color: #343A40;
+    color: #DEE2E6;
+}
+
+body{
+    background-color: #6C757D;
+}
+
+nav{
+    background-color: #495057;
+}
+
+footer{
+    background-color: #495057
+}
+
+h2{
+    text-align: center;
+}
+
+nav ul{
+    padding: 3rem;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
 
+a{
+    text-decoration: none;
+    color: #DEE2E6;
+}
+
+p.project-description{
+    margin:1rem;
+}
+
+p{
+    margin:2rem;
+}
+
 ul.positions{
+
+}
+
+footer ul{
+    padding: 3rem;
+
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3{
+    margin-left: 2rem;
+}
+
+div.list{
+    margin-left:2rem;
     
 }
+
