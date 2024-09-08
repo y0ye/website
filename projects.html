@@ -5,82 +5,92 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>Projects</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Bennett Oppenheimer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet.css" />
 </head>
 
 <body>
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html"><button class="button-54" role="button">HOME</button></a></li>
+            <li><a href="aboutme.html"><button class="button-54" role="button">ABOUT</button></a></li>
+            <li><a href="projects.html"><button class="button-54" role="button">PROJECTS</button></a></li>
         </ul>
     </nav>
 
     <main>
-        <article>
-
             <h2>Projects</h2>
+            <div class="project-items">
+                <div class="project-list">
+                    <h3>Class Work</h3>
+                    <ul>
+                        <li>
+                            <h4>Movie Database</h4>
+                            <ul class="project-listul">
+                                <li class="project-description">Utilized HTML, CSS, and PHP to make a functional webapp
+                                    for
+                                    my Databases course</li>
+                                <li class="project-description">Utilized XAMPP for Apache webserver and MySQL/Database
+                                    management</li>
+                                <li class="project-description">Utilized IMDB API for fetching movie details</li>
+                            </ul>
 
-            <h3>Class Work</h3>
-            <div class="project-list">
-                <ul>
-                    <li>
-                        <h4>Movie Database</h4>
-                        <ul>
-                            <li class="project-description">Utilized HTML, CSS, and PHP to make a functional webapp for
-                                my Databases course</li>
-                            <li class="project-description">Utilized XAMPP for Apache webserver and MySQL/Database
-                                management</li>
-                            <li class="project-description">Utilized IMDB API for fetching movie details</li>
-                        </ul>
+                            <h5>Functional Requirements</h5>
+                            <ul class="req-list">
+                                <li>User creation</li>
+                                <li>Password encryption</li>
+                                <li><span style="text-decoration: underline;">(C)</span>reate review</li>
+                                <li><span style="text-decoration: underline;">(R)</span>etrieve movie and review</li>
+                                <li><span style="text-decoration: underline;">(U)</span>pdate review</li>
+                                <li><span style="text-decoration: underline;">(D)</span>elete review</li>
+                            </ul>
 
-                        <h5>Functional Requirements</h5>
-                        <ul>
-                            <li>User creation</li>
-                            <li>Password encryption</li>
-                            <li><span style="color: blue;">C</span>reate review</li>
-                            <li><span style="color: blue;">R</span>etrieve movie and review</li>
-                            <li><span style="color: blue;">U</span>pdate review</li>
-                            <li><span style="color: blue;">D</span>elete review</li>
-                        </ul>
+                            <h5>Non-Functional Requirements</h5>
+                            <ul class="req-list">
+                                <li>Security</li>
+                                <li>Reliability</li>
+                                <li>Performance</li>
+                                <li>Usability</li>
+                            </ul>
 
-                        <h5>Non-Functional Requirements</h5>
-                        <ul>
-                            <li>Security</li>
-                            <li>Reliability</li>
-                            <li>Performance</li>
-                            <li>Usability</li>
-                        </ul>
+                        </li>
+                    </ul>
+                </div>
 
-                    </li>
-                </ul>
+                <div class="project-list">
+                    <h3>Personal</h3>
+
+                    <ul>
+                        <li>
+                            <h4>Manga Search (WIP)</h4>
+                            <ul class="project-listul">
+                                <li class="project-description">Utilized HTML, CSS, and JavaScript to create a
+                                    responsive website</li>
+                                <li class="project-description">Utilized GitHub Pages to host website</li>
+                                <li class="project-description">Utilized Jikan RESTful API</li>
+                                <li class="project-description">Limited functionality at the moment, only has search and
+                                    "Top 25" features</li>
+                            </ul>
+
+                            <h4>This Website! (WIP)</h4>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <h3>Personal</h3>
-            <div class="project-list">
-                <ul>
-                    <li>
-                        <h4>Manga Search (WIP)</h4>
-                        <ul>
-                            <li class="project-description">Utilized HTML, CSS, and JavaScript to create a responsive website</li>
-                            <li class="project-description">Utilized GitHub Pages to host website</li>
-                            <li class="project-description">Utilized Jikan RESTful API</li>
-                            <li class="project-description">Limited functionality at the moment, only has search and "Top 25" features</li>
-                        </ul>
-                        
-                    </li>
-                </ul>
-            </div>
-        </article>
     </main>
 
     <footer class="contact-info">
         <ul>
-            <li><a href="mailto: bennettoppenheimer@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/bennett-oppenheimer-b26076230/">LinkedIn</a></li>
+            <li><a href="mailto: bennettoppenheimer@gmail.com"><button class="button-53"
+                        role="button">EMAIL</button></a></li>
+            <li><a href="resume.pdf"><button class="button-53"
+                        role="button">RESUME</button></a></li>
+            <li><a href="https://www.linkedin.com/in/bennett-oppenheimer-b26076230/"><button class="button-53"
+                        role="button">LinkedIn</button></a></li>
         </ul>
     </footer>
 </body>

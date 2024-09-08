@@ -5,31 +5,54 @@
 html {
     background-color: #343A40;
     color: #DEE2E6;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    background: linear-gradient(90deg, #343A40, #6C757D);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
 }
 
 body {
+    min-height: 98vh;
     background-color: #6C757D;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
+    margin-top: 0rem;
     background-color: #495057;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex: 1;
 }
 
 footer {
-    background-color: #495057
+    background-color: #495057;
 }
 
 h2 {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 h5 {
     margin-left: 1rem;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
 }
 
 nav ul {
-    padding: 3rem;
+    margin-top:0rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0rem;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -51,31 +74,153 @@ p {
     margin: 2rem;
 }
 
-ul.positions {}
+ul.project-listul {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
+}
+
+ul.req-list {
+    padding-top: 0rem;
+    margin-top: 0rem;
+    padding-bottom: 1rem;
+}
+
+ul.req-list li {
+    margin-bottom: .15rem;
+
+}
 
 footer ul {
-    padding: 3rem;
-
+    padding: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
 
 h3 {
-    margin-left: 2rem;
+    margin-left: 1rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+h3.aboutme {
+    text-align: center;
+    margin-left: 0rem;
 }
 
 div.list {
     margin-left: 2rem;
     padding: 2rem;
     padding-top: 0rem;
-    padding-bottom:1rem;
+    padding-bottom: .25rem;
+}
+
+div.list ul li {
+    margin-bottom: .5rem;
 }
 
 div.project-list {
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 li.project-description {
-    margin-bottom:.5rem;
+    margin-bottom: .5rem;
+}
+
+.button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+.button-53 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: -1px -1px 0px 0px, -2px -2px 0px 0px, -3px -3px 0px 0px, -4px -4px 0px 0px, -5px -5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-53:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: -5px;
+    left: -5px;
+}
+
+@media (min-width: 768px) {
+    .button-54 {
+        padding: 0.25em 0.75em;
+    }
+
+    .button-53 {
+        padding: 0.25em 0.75em;
+    }
+}
+
+@media (min-width: 800px) {
+
+    div.list-about-items,
+    div.list-aboutme,
+    div.project-items {
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    div.list-about-items,
+    div.list-aboutme,
+    div.project-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+
+        text-align: center;
+    }
+}
+
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
