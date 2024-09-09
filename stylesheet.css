@@ -63,6 +63,11 @@ a {
     color: #DEE2E6;
 }
 
+a.link{
+    text-decoration: underline;
+    color: #1d5b91;
+}
+
 p.project-description {
     text-wrap: balance;
     margin-top: 0rem;
